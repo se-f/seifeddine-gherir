@@ -14,6 +14,8 @@ Dependency injection is achieved through the @Autowired annotation (we could've 
 - Category
 - Priority (Enum)
 
+The entities will be created automatically thanks to `spring.jpa.hibernate.ddl-auto=create
+spring.jpa.generate-ddl=true` and the property `?createDatabaseIfNotExist=true` in `application.properties`
 ## Dockerization:
 
 First, run build the project with `mvn clean package -Dmaven.test.skip=true -X`
