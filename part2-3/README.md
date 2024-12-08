@@ -1,4 +1,4 @@
-Use of dependency injection and IoC:
+## Use of dependency injection and IoC:
 
 Every Service states their dependencies instead of fulfilling it direclty, and Spring IOC Container takes care of
 dependency injection
@@ -6,15 +6,15 @@ dependency injection
 -> instead of the developer fulfilling the classes dependencies, he leaves it to the IoC container, and this is
 inversion of control.
 
-Dependency injection is achieved through the @Autowired annotation
+Dependency injection is achieved through the @Autowired annotation (we could've done it through setter injection too)
 
--- Entities:
+## Entities:
 
 - Task (many to many with Category)
 - Category
 - Priority (Enum)
 
--- Dockerization:
+## Dockerization:
 
 First, run build the project with `mvn clean package -Dmaven.test.skip=true -X`
 
